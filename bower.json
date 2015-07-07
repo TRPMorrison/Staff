@@ -22,7 +22,9 @@
     "angular": "~1.4.1",
     "foundation": "~5.5.2",
     "materialize": "~0.97.0",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "angular-cookies": "~1.4.2",
+    "angular-ui-router": "~0.2.15"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
