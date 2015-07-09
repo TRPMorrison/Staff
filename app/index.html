@@ -21,11 +21,12 @@
 </head>
 
 <body ng-app="app">
-  <i class="large material-icons">mic</i>
-  <!-- <div class="navbar-fixed"> -->
+  <!-- NAV BAR -->
+  <div class="navbar">
     <nav>
+      <i class="large material-icons">mic</i>
+      <a href="#!" class="brand-logo">    Ensemble/Staff Logo </a>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Ensemble/Staff Logo </a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#/public">Gig Board</a></li>
           <li><a href="#/private">My Dashboard</a></li>
@@ -34,9 +35,114 @@
         </ul>
       </div>
     </nav>
+  </div>
+  <!-- <div class="container"> -->
   <!-- </div> -->
-  <div class="container">
-    <h4>Create An Account</h4>
+  <!-- REGISTRATION MODAL TRIGGER -->
+  <button data-target="modal1" class="btn modal-trigger">Create Account</button>
+  <!-- Modal Structure -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <h4>
+      Enter Contact Information
+    </h4>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input class="validate" id="first_name" placeholder="First Name" type="text">
+            </div>
+            <div class="input-field col s6">
+              <input class="validate" id="last_name" placeholder="Last Name" type="text">
+            </div>
+          </div>
+          <!-- FIX ERROR/SUCCESS SASS VALIDATION -->
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate">
+              <label for="email" data-error="wrong" data-success="right">Email</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">telephone</i>
+              <input id="telephone" type="tel" class="validate">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">lock_outline</i>
+                <input class="validate" id="password" placeholder="Password" type="password">
+              </div>
+              <div class="input-field col s6">
+                 <i class="material-icons prefix">face</i>
+                <input id="username" type="username" class="validate">
+
+                <!-- <input class="validate" id="user_name" placeholder="Username" type="username"> -->
+              </div>
+            </div>
+          </div>
+          <!--         <div class="input-field col s6">
+            <input class="validate" id="email" placeholder="E-mail" type="email">
+          </div> -->
+          <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn-flat" href="#!">REGISTER</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--  <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input class="validate" id="account_circle" type="text">
+              <label for="icon_prefix">Full Name</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input class="validate" id="icon_email" type="text">
+              <label for="icon_email">E-mail</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input class="validate" id="icon_person" type="text">
+              <label for="icon_person">Username</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input class="validate" id="icon_telephone" type="tel">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">lock_outline</i>
+              <input class="validate" id="icon_lock_outline" type="text">
+              <label for="icon_lock_outline">Password</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">lock</i>
+              <input class="validate" id="icon_lock" type="text">
+              <label for="icon_lock">Confirm Password
+              </label>
+
+            </div>
+          </div>
+        </form> -->
+  <!--         <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">REGISTER</a>
+        </div>
+      </div>
+    </div>
+    </div> -->
+  <!-- PARALLAX -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <!-- <img src="images/parallax1.jpg"> -->
+    </div>
+  </div>
+  <!-- REGISTRATION VIEW -->
+  <!--  <h4>Create An Account</h4>
     <div class="row">
       <form class="col s12">
         <div class="row">
@@ -94,8 +200,9 @@
           </p>
         </div>
       </form>
-    </div>
-    <hr>
+    </div> -->
+  <!-- GIG BOARD PUBLIC VIEW -->
+  <!-- <hr>
     <h4>Gig Board</h4>
     <ul class="collection">
       <li class="collection-item avatar">
@@ -155,22 +262,15 @@
         <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
       </li>
       <li class="collection-item avatar">
-        <!-- <i class="material-icons circle purple">face</i> -->
-        <!-- <i class="material-icons md-36 circle purple">face</i> -->
-        <i class="material-icons orange600">face</i>
+        <i class="material-icons circle purple">face</i>
         <span class="title">Title</span>
         <p>First Line
           <br> Second Line
         </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content"><i class="face">grade</i></a>
       </li>
     </ul>
-    <i class="material-icons md-24">face</i>
-    <i class="material-icons md-36">face</i>
-    <i class="material-icons md-36 circle brown">mood</i>
-    <i class="material-icons orange600">face</i>
-    <i class="large material-icons">mic</i>
-  </div>
+  </div> -->
   <!-- END CONTAINER -->
   <!-- BEGIN SCRIPTS -->
   <!-- Vendors -->

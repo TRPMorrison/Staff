@@ -1,17 +1,53 @@
-* {
-  border: solid 1px black;
-}
-.material-icons.orange600 {
-  color: #FB8C00;
-}
-
-.material-icons.md-36 {
-  font-size: 36px;
+// * {
+//   border: solid 1px black;
+// }
+nav {
+  height: 90px;
 }
 
-.material-icons.md-36 {
-  color: #8BC34A;
-  font-size: 36px;
+i.large.material-icons {
+  color: red;
+  margin-left: 2%;
+  // z-index: -1;
+  // overflow: overlay;
+  // display: inline;
 }
+
+nav a.brand-logo {
+width: 30%;
+margin-left: 5%;
+color: black;
+  overflow: overlay;
+}
+
+nav .nav-wrapper {
+  width: 35%;
+  position: relative;
+  float: right;
+}
+
+.modal {
+width: 800px;
+height: 700px;
+}
+
+.parallax-container {
+  margin-top: 10%;
+  height: 1000px;
+  background-color: yellow;
+}
+
+// .material-icons.orange600 {
+//   color: #FB8C00;
+// }
+
+// .material-icons.md-36 {
+//   font-size: 36px;
+// }
+
+// .material-icons.md-36 {
+//   color: #8BC34A;
+//   font-size: 36px;
+// }
 
 

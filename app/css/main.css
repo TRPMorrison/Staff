@@ -1,12 +1,26 @@
-* {
-  border: solid 1px black; }
+nav {
+  height: 90px; }
 
-.material-icons.orange600 {
-  color: #FB8C00; }
+i.large.material-icons {
+  color: red;
+  margin-left: 2%; }
 
-.material-icons.md-36 {
-  font-size: 36px; }
+nav a.brand-logo {
+  width: 30%;
+  margin-left: 5%;
+  color: black;
+  overflow: overlay; }
 
-.material-icons.md-36 {
-  color: #8BC34A;
-  font-size: 36px; }
+nav .nav-wrapper {
+  width: 35%;
+  position: relative;
+  float: right; }
+
+.modal {
+  width: 800px;
+  height: 700px; }
+
+.parallax-container {
+  margin-top: 10%;
+  height: 1000px;
+  background-color: yellow; }
