@@ -1,51 +1,70 @@
 <h2>Create An Account</h2>
 <form ng-submit="registerUser(userObj)">
-    <input ng-model="userObj.username" type="email" placeholder="Email">
-    <input ng-model="userObj.name" type="text" placeholder="First Name">
-    <input ng-model="userObj.password" type="password" placeholder="Password">
-    <!-- <input ng-model="userObj.password" type="password" placeholder="Confirm Password"> -->
-    <button>Sign-Up</button>
+  <input ng-model="userObj.username" type="email" placeholder="Email">
+  <input ng-model="userObj.name" type="text" placeholder="First Name">
+  <input ng-model="userObj.password" type="password" placeholder="Password">
+  <input ng-model="userObj.password" type="password" placeholder="Confirm Password">
+  <button>Sign-Up</button>
 </form>
-           <h3>Signup</h3>
-        <form class="login">
-            <input placeholder="Name" type="text">
-            <input placeholder="User Name" type="text">
-            <input placeholder="Password" type="text">
-            <input placeholder="Email" type="text">
-            <button>REGISTER</button>
-        </form>
-        <hr>
 
- <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input class="validate" id="account_circle" type="text">
-                        <label for="icon_prefix">Full Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">email</i>
-                        <input class="validate" id="icon_email" type="text">
-                        <label for="icon_email">E-mail</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">person</i>
-                        <input class="validate" id="icon_person" type="text">
-                        <label for="icon_person">Username</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">phone</i>
-                        <input class="validate" id="icon_telephone" type="tel">
-                        <label for="icon_telephone">Telephone</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">lock_outline</i>
-                        <input class="validate" id="icon_lock_outline" type="text">
-                        <label for="icon_lock_outline">Password</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">lock</i>
-                        <input class="validate" id="icon_lock" type="text">
-                        <label for="icon_lock">Confirm Password</label>
-                    </div>
+<h4>Sign Up</h4>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input class="validate" id="account_circle" type="text">
+            <label for="icon_prefix">Full Name</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input class="validate" id="icon_email" type="text">
+            <label for="icon_email">E-mail</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">person</i>
+            <input class="validate" id="icon_person" type="text">
+            <label for="icon_person">Username</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input class="validate" id="icon_telephone" type="tel">
+            <label for="icon_telephone">Telephone</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock_outline</i>
+            <input class="validate" id="icon_lock_outline" type="text">
+            <label for="icon_lock_outline">Password</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock</i>
+            <input class="validate" id="icon_lock" type="text">
+            <label for="icon_lock">Confirm Password
+            </label>
+          </div>
+          <button>REGISTER</button>
+          <hr>
+        </div>
+      </form>
+    </div>
+    <div class="input-field col s6">
+      <h5><i class="medium material-icons">library_music</i>SELECT MUSICAL SPECIALTY</h5>
+      <form action="#">
+        <div class="input-field col s6">
+          <p>
+            <input checked="checked" class="filled-in" id="instruments" type="checkbox">
+            <label for="instruments">Instrument(s)</label>
+          </p>
+          <p>
+            <input checked="checked" class="filled-in" id="vocals" type="checkbox">
+            <label for="vocals">Vocalist</label>
+          </p>
+          <p>
+            <input checked="checked" class="filled-in" id="dj" type="checkbox">
+            <label for="dj">DJ</label>
+          </p>
+        </div>
+      </form>
+      </div>
+
+

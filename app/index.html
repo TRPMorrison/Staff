@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <title>STAFF</title>
+  <title>Ensemble/Staff</title>
+  <!-- MOBILE -->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!-- BOOTSTRAP -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -10,8 +11,9 @@
   <!-- MATERIALIZE -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" rel="stylesheet">
   <link href="css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css">
-  <!-- GOOGLE FONT ICONS -->
+  <!-- GOOGLE MATERIAL ICONS & FONTS-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400" rel="stylesheet">
   <!-- NORMALIZE -->
   <link href="css/vendor/normalize.css" rel="stylesheet">
   <!-- MAIN CSS -->
@@ -19,87 +21,112 @@
 </head>
 
 <body ng-app="app">
-
-  <small><a href="#/">Log Out</a></small>
-  <div class="container">
-    <h4>Sign Up</h4>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">account_circle</i>
-            <input class="validate" id="account_circle" type="text">
-            <label for="icon_prefix">Full Name</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">email</i>
-            <input class="validate" id="icon_email" type="text">
-            <label for="icon_email">E-mail</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">person</i>
-            <input class="validate" id="icon_person" type="text">
-            <label for="icon_person">Username</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">phone</i>
-            <input class="validate" id="icon_telephone" type="tel">
-            <label for="icon_telephone">Telephone</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">lock_outline</i>
-            <input class="validate" id="icon_lock_outline" type="text">
-            <label for="icon_lock_outline">Password</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">lock</i>
-            <input class="validate" id="icon_lock" type="text">
-            <label for="icon_lock">Confirm Password
-            </label>
-          </div>
-          <button>REGISTER</button>
-          <hr>
-        </div>
-      </form>
-    </div>
-    <!-- <div class="input-field col s6"> -->
-    <h5><i class="medium material-icons">library_music</i>SELECT MUSICAL SPECIALTY</h5>
-    <form action="#">
-      <div class="input-field col s6">
-        <p>
-          <input checked="checked" class="filled-in" id="instruments" type="checkbox">
-          <label for="instruments">Instrument(s)</label>
-        </p>
-        <p>
-          <input checked="checked" class="filled-in" id="vocals" type="checkbox">
-          <label for="vocals">Vocalist</label>
-        </p>
-        <p>
-          <input checked="checked" class="filled-in" id="dj" type="checkbox">
-          <label for="dj">DJ</label>
-        </p>
+  <div class="navbar-fixed"> <i class="large material-icons">mic</i>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Ensemble/Staff Logo </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#/public">Gig Board</a></li>
+          <li><a href="#/private">My Dashboard</a></li>
+          <li class="active"><a href="#/register">Register</a></li>
+          <li><a href="#/">Log Out</a></li>
+        </ul>
       </div>
-    </form>
-  <!-- END CONTAINER -->
+    </nav>
   </div>
-
+  <div class="container">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle yellow">person_pin</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle">person_add</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle green">person</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle red">person_outline</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle blue">perm_identity</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle orange">tag_faces</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle brown">mood</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <!-- <i class="material-icons circle purple">face</i> -->
+        <!-- <i class="material-icons md-36 circle purple">face</i> -->
+        <i class="material-icons orange600">face</i>
+        <span class="title">Title</span>
+        <p>First Line
+          <br> Second Line
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+    </ul>
+    <i class="material-icons md-24">face</i>
+    <i class="material-icons md-36">face</i>
+    <i class="material-icons md-36 circle brown">mood</i>
+    <i class="material-icons orange600">face</i>
+    <i class="large material-icons">mic</i>
+  </div>
+  <!-- END CONTAINER -->
   <!-- BEGIN SCRIPTS -->
   <!-- Vendors -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/underscore.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/underscore.js"></script>
   <!-- Angular -->
-    <script src="js/vendor/angular.js"></script>
-    <script src="js/vendor/angular-cookies.js"></script>
-    <script src="js/vendor/angular-ui-router/angular-ui-router.js"></script>
-    <script src="js/vendor/angular-route.min.js"></script>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-cookies.js"></script>
+  <script src="js/vendor/angular-ui-router/angular-ui-router.js"></script>
+  <script src="js/vendor/angular-route.min.js"></script>
   <!-- Materialize & Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Main, Controllers & Factories -->
-    <script src="js/main.js"></script>
-    <script src="js/user/user/user.controller.js"></script>
-    <script src="js/user/user/user.factor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/user/user.controller.js"></script>
+  <script src="js/user/user.factory.js"></script>
   <!-- END SCRIPTS -->
-
 </body>
+
 </html>

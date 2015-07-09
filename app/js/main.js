@@ -1,52 +1,58 @@
 ;(function() {
 
-    'use strict';
+  'use strict';
 
+  angular.module('staff', ['ngRoute', 'ui.router', 'ngCookies', 'UserModule'])
 
-    angular.module('app', [ 'ui.router', 'ngCookies','UserModule'])
-        .constant('PARSE', {
-            URL: 'https://api.parse.com/1/',
-            CONFIG: {
-                headers: {
-                    'X-Parse-Application-Id': 'JkvjX6JIKiOArqMEloPtlQuc6vSHtjlpE1MLBwZ3',
-                    'X-Parse-REST-API-Key': 'EHWEn2vW3pwTh7Qxg1PFUq25Rn8YyCyV2tVsDQEF',
-                    'Content-Type': 'application/json'
-                }
-            }
-        })
-        .config( function ($stateProvider, $urlRouterProvider) {
+  .constant('PARSE', {
+    URL: 'https://api.parse.com/1/',
+    CONFIG: {
+      headers: {
+        'X-Parse-Application-Id': 'JkvjX6JIKiOArqMEloPtlQuc6vSHtjlpE1MLBwZ3',
+        'X-Parse-REST-API-Key': 'EHWEn2vW3pwTh7Qxg1PFUq25Rn8YyCyV2tVsDQEF'
+      }
+    }
+  })
 
-        $urlRouterProvider.otherwise('/');
+  .config(['$routeProvider',
+    function($routeProvider) {
 
-              $stateProvider
+      $routeProvider.when('/', {
+        templateUrl: '.js/dashboard/dashboard.tpl.html',
+        controller: 'Dashboard'
+      })
 
-              .state( 'login', {
-                url: '/',
-                templateUrl: 'scripts/User/login.tpl.html',
-                controller: 'UserCtrl'
-              })
-              .state('register', {
-                url: '/register',
-                templateUrl: 'scripts/User/register.tpl.html',
-                controller: 'UserCtrl'
-              });
+      .when('/login', {
+        templateUrl: '.js/login/login.tpl.html',
+        controller: 'Login'
+      })
 
+      .when('/logout', {
+        templateUrl: '.js/logout/logout.tpl.html',
+        controller: 'Logout'
+      })
 
+      .when('/register', {
+        templateUrl: '.js/register/register.tpl.html',
+        controller: 'Register'
+      })
 
-            })
+      .when('/private', {
+        templateUrl: '.js/private/private.tpl.html',
+        controller: 'Private'
+      })
 
-         .run([ '$rootScope', 'UserFactory', 'PARSE',
+      .when('/public', {
+        templateUrl: '.js/public/public.tpl.html',
+        controller: 'Public'
+      })
 
-                function ($rootScope, UserFactory, PARSE) {
+      .when('/search', {
+        templateUrl: '.js/search/search.tpl.html',
+        controller: 'Search'
+      });
 
-                  $rootScope.$on('$routeChangeStart', function () {
-
-                    // Run my Login Status
-                    UserFactory.status();
-
-         });
-
-   }
+    }
 
   ]);
 
@@ -54,49 +60,92 @@
 }());
 
 
-
-
 // ;(function() {
 
-//     'use strict';
+//   'use strict';
 
-//     angular.module('staff', ['ngRoute'])
+//   angular.module('staff', ['ngRoute', 'ui.router', 'ngCookies', 'UserModule'])
 
-//     .config(function($routeProvider) {
-//         $routeProvider
-
-//             .when('/', {
-//             templateUrl: '.js/dashboard/dashboard.tpl.html',
-//             controller: 'Dashboard'
-//         })
-
-//         .when('/login', {
-//             templateUrl: '.js/user/login.tpl.html',
-//             controller: 'Login'
-//         })
+//   .config(function($routeProvider) {
+//       $routeProvider
 
 
-//         .when('/register', {
-//             templateUrl: '.js/user/register.tpl.html',
-//             controller: 'Register'
-//         })
+//   .constant('PARSE', {
+//       URL: 'https://api.parse.com/1/',
+//       CONFIG: {
+//         headers: {
+//           'X-Parse-Application-Id': 'JkvjX6JIKiOArqMEloPtlQuc6vSHtjlpE1MLBwZ3',
+//           'X-Parse-REST-API-Key': 'EHWEn2vW3pwTh7Qxg1PFUq25Rn8YyCyV2tVsDQEF',
+//           'Content-Type': 'application/json'
+//         }
+//       }
+//     })
+// .config(function($stateProvider, $urlRouterProvider) {
 
-//         .when('/private', {
-//             templateUrl: '.js/private/private.tpl.html',
-//             controller: 'Private'
-//         })
+//   $urlRouterProvider.otherwise('/');
 
-//         .when('/public', {
-//             templateUrl: '.js/public/public.tpl.html',
-//             controller: 'Public'
-//         })
+//   $routeProvider
 
-//         .when('/search', {
-//             templateUrl: '.js/search/search.tpl.html',
-//             controller: 'Search'
-//         });
+//   .when('/', {
+//   templateUrl: '.js/dashboard/dashboard.tpl.html',
+//   controller: 'Dashboard'
+// })
 
-//     });
+// .when('/login', {
+//     templateUrl: '.js/user/login.tpl.html',
+//     controller: 'Login'
+// })
+
+// .when('login', {
+//   url: '/',
+//   templateUrl: 'js/user/login.tpl.html',
+//   controller: 'User'
+// })
+
+
+// .when('/register', {
+//     templateUrl: '.js/user/register.tpl.html',
+//     controller: 'Register'
+// })
+
+//       .when('register', {
+//         url: '/register',
+//         templateUrl: 'js/user/register.tpl.html',
+//         controller: 'User'
+//       })
+
+//       .when('/private', {
+//         templateUrl: '.js/private/private.tpl.html',
+//         controller: 'Private'
+//       })
+
+//       .when('/public', {
+//         templateUrl: '.js/public/public.tpl.html',
+//         controller: 'Public'
+//       })
+
+//       .when('/search', {
+//         templateUrl: '.js/search/search.tpl.html',
+//         controller: 'Search'
+//       });
+
+
+//     })
+
+//   .run(['$rootScope', 'UserFactory', 'PARSE',
+
+//     function($rootScope, UserFactory, PARSE) {
+
+//       $rootScope.$on('$routeChangeStart', function() {
+
+//         // Run my Login Status
+//         UserFactory.status();
+
+//       });
+
+//     }
+
+//   ]);
 
 
 // }());

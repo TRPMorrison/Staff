@@ -24,7 +24,8 @@
     "materialize": "~0.97.0",
     "bootstrap": "~3.3.5",
     "angular-cookies": "~1.4.2",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "material-design-icons": "~2.0.0"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
