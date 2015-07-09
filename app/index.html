@@ -13,7 +13,7 @@
   <link href="css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css">
   <!-- GOOGLE MATERIAL ICONS & FONTS-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400" rel="stylesheet">
   <!-- NORMALIZE -->
   <link href="css/vendor/normalize.css" rel="stylesheet">
   <!-- MAIN CSS -->
@@ -21,7 +21,8 @@
 </head>
 
 <body ng-app="app">
-  <div class="navbar-fixed"> <i class="large material-icons">mic</i>
+  <i class="large material-icons">mic</i>
+  <!-- <div class="navbar-fixed"> -->
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Ensemble/Staff Logo </a>
@@ -33,8 +34,69 @@
         </ul>
       </div>
     </nav>
-  </div>
+  <!-- </div> -->
   <div class="container">
+    <h4>Create An Account</h4>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input class="validate" id="account_circle" type="text">
+            <label for="icon_prefix">Full Name</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input class="validate" id="icon_email" type="text">
+            <label for="icon_email">E-mail</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">person</i>
+            <input class="validate" id="icon_person" type="text">
+            <label for="icon_person">Username</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input class="validate" id="icon_telephone" type="tel">
+            <label for="icon_telephone">Telephone</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock_outline</i>
+            <input class="validate" id="icon_lock_outline" type="text">
+            <label for="icon_lock_outline">Password</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock</i>
+            <input class="validate" id="icon_lock" type="text">
+            <label for="icon_lock">Confirm Password
+            </label>
+          </div>
+          <button>REGISTER</button>
+          <hr>
+        </div>
+      </form>
+    </div>
+    <div class="input-field col s6">
+      <h4><i class="medium material-icons">library_music</i>SELECT MUSICAL SPECIALTY</h4>
+      <form action="#">
+        <div class="input-field col s6">
+          <p>
+            <input checked="checked" class="filled-in" id="instruments" type="checkbox">
+            <label for="instruments">Instrument(s)</label>
+          </p>
+          <p>
+            <input checked="checked" class="filled-in" id="vocals" type="checkbox">
+            <label for="vocals">Vocalist</label>
+          </p>
+          <p>
+            <input checked="checked" class="filled-in" id="dj" type="checkbox">
+            <label for="dj">DJ</label>
+          </p>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <h4>Gig Board</h4>
     <ul class="collection">
       <li class="collection-item avatar">
         <i class="material-icons circle yellow">person_pin</i>
