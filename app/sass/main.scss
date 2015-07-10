@@ -14,9 +14,9 @@ i.large.material-icons {
 }
 
 nav a.brand-logo {
-width: 30%;
-margin-left: 5%;
-color: black;
+  width: 30%;
+  margin-left: 5%;
+  color: black;
   overflow: overlay;
 }
 
@@ -27,8 +27,16 @@ nav .nav-wrapper {
 }
 
 .modal {
-width: 800px;
-height: 700px;
+  width: 800px;
+}
+
+.modal-content h5 {
+  margin-top: 0;
+}
+
+button.modal-action {
+  float: right;
+  margin-top: -1px;
 }
 
 .parallax-container {
@@ -36,18 +44,4 @@ height: 700px;
   height: 1000px;
   background-color: yellow;
 }
-
-// .material-icons.orange600 {
-//   color: #FB8C00;
-// }
-
-// .material-icons.md-36 {
-//   font-size: 36px;
-// }
-
-// .material-icons.md-36 {
-//   color: #8BC34A;
-//   font-size: 36px;
-// }
-
 

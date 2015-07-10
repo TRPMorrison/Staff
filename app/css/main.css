@@ -17,8 +17,14 @@ nav .nav-wrapper {
   float: right; }
 
 .modal {
-  width: 800px;
-  height: 700px; }
+  width: 800px; }
+
+.modal-content h5 {
+  margin-top: 0; }
+
+button.modal-action {
+  float: right;
+  margin-top: -1px; }
 
 .parallax-container {
   margin-top: 10%;

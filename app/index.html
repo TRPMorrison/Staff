@@ -43,98 +43,51 @@
   <!-- Modal Structure -->
   <div class="modal" id="modal1">
     <div class="modal-content">
-      <h4>
+      <h5>
       Enter Contact Information
-    </h4>
+    </h5>
       <div class="row">
         <form class="col s12">
           <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">account_circle</i>
+            <div class="input-field col s6  ">
+              <!-- <i class="material-icons prefix">account_circle</i> -->
               <input class="validate" id="first_name" placeholder="First Name" type="text">
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s6  ">
               <input class="validate" id="last_name" placeholder="Last Name" type="text">
             </div>
           </div>
           <!-- FIX ERROR/SUCCESS SASS VALIDATION -->
           <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="validate">
-              <label for="email" data-error="wrong" data-success="right">Email</label>
+            <div class="input-field col s6  ">
+              <!-- <i class="material-icons prefix">email</i> -->
+              <input class="validate" id="email" placeholder="E-mail" type="text">
+              <label for="email" data-error="wrong" data-success="right"></label>
             </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">telephone</i>
-              <input id="telephone" type="tel" class="validate">
-              <label for="icon_telephone">Telephone</label>
-            </div>
-            <div class="row">
-              <div class="input-field col s6">
-                <i class="material-icons prefix">lock_outline</i>
-                <input class="validate" id="password" placeholder="Password" type="password">
-              </div>
-              <div class="input-field col s6">
-                 <i class="material-icons prefix">face</i>
-                <input id="username" type="username" class="validate">
-
-                <!-- <input class="validate" id="user_name" placeholder="Username" type="username"> -->
-              </div>
+            <div class="input-field col s6  ">
+              <!-- <i class="material-icons prefix">telephone</i> -->
+              <input class="validate" id="telephone" placeholder="Telephone" type="tel">
+              <label for="telephone" data-error="wrong" data-success="right"></label>
             </div>
           </div>
-          <!--         <div class="input-field col s6">
-            <input class="validate" id="email" placeholder="E-mail" type="email">
-          </div> -->
-          <div class="modal-footer">
-            <a class="modal-action modal-close waves-effect waves-green btn-flat" href="#!">REGISTER</a>
+          <div class="row">
+            <div class="input-field col s6  ">
+              <!-- <i class="material-icons prefix">lock_outline</i> -->
+              <input class="validate" id="password" placeholder="Password" type="text">
+              <label for="password" data-error="wrong" data-success="right"></label>
+            </div>
+            <div class="input-field col s6  ">
+              <!-- <i class="material-icons prefix">face</i> -->
+              <input class="validate" id="username" placeholder="Username" type="text">
+              <label for="username" data-error="wrong" data-success="right"></label>
+              <!-- <input class="validate" id="user_name" placeholder="Username" type="username"> -->
+            </div>
           </div>
         </form>
+        <button class="modal-action modal-close btn waves-effect waves-light" type="submit" name="action">REGISTER</button>
       </div>
     </div>
   </div>
-  <!--  <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">account_circle</i>
-              <input class="validate" id="account_circle" type="text">
-              <label for="icon_prefix">Full Name</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">email</i>
-              <input class="validate" id="icon_email" type="text">
-              <label for="icon_email">E-mail</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">person</i>
-              <input class="validate" id="icon_person" type="text">
-              <label for="icon_person">Username</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">phone</i>
-              <input class="validate" id="icon_telephone" type="tel">
-              <label for="icon_telephone">Telephone</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">lock_outline</i>
-              <input class="validate" id="icon_lock_outline" type="text">
-              <label for="icon_lock_outline">Password</label>
-            </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">lock</i>
-              <input class="validate" id="icon_lock" type="text">
-              <label for="icon_lock">Confirm Password
-              </label>
-
-            </div>
-          </div>
-        </form> -->
-  <!--         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">REGISTER</a>
-        </div>
-      </div>
-    </div>
-    </div> -->
   <!-- PARALLAX -->
   <div class="parallax-container">
     <div class="parallax">
