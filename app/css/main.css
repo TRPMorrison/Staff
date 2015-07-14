@@ -29,8 +29,7 @@ button.modal-action {
 
 button.modal-trigger {
   float: right;
-  margin-top: -1px;
-  background-color: #3d0000; }
+  background-color: #2B292A; }
 
 .parallax-container {
-  height: "50px"; }
+  height: 1000px; }
