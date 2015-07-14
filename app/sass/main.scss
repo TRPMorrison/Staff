@@ -3,6 +3,7 @@
 // }
 nav {
   height: 90px;
+  background-color: #482813;
 }
 
 i.large.material-icons {
@@ -16,12 +17,12 @@ i.large.material-icons {
 nav a.brand-logo {
   width: 30%;
   margin-left: 5%;
-  color: black;
+  color: white;
   overflow: overlay;
 }
 
 nav .nav-wrapper {
-  width: 35%;
+  width: 45%;
   position: relative;
   float: right;
 }
@@ -38,10 +39,16 @@ button.modal-action {
   float: right;
   margin-top: -1px;
 }
-
-.parallax-container {
-  margin-top: 10%;
-  height: 1000px;
-  background-color: yellow;
+button.modal-trigger {
+  float: right;
+  margin-top: -1px;
+  background-color: #3d0000;
 }
 
+
+  .parallax-container {
+      height: "50px";
+  // margin-top: 10%;
+  // height: 1000px;
+  // background-color: #2F3031;
+}
