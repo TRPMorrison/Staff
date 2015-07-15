@@ -24,12 +24,24 @@ nav .nav-wrapper {
   margin-top: 0; }
 
 button.modal-action {
-  float: right;
-  margin-top: -1px; }
+  margin: auto; }
 
 button.modal-trigger {
   float: right;
+  margin-top: 1px;
   background-color: #2B292A; }
 
+button.btn.modal-trigger {
+  margin-right: 320px; }
+
+h1 {
+  font-size: 100pt;
+  text-align: center;
+  padding-top: 100px; }
+
+h2 {
+  font-size: 100pt;
+  text-align: center; }
+
 .parallax-container {
-  height: 1000px; }
+  height: "20px"; }

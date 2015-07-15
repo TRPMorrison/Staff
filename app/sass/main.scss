@@ -1,7 +1,6 @@
 // * {
 //   border: solid 1.5px red;
 // }
-
 nav {
   height: 90px;
   background-color: #482813;
@@ -37,16 +36,29 @@ nav .nav-wrapper {
 }
 
 button.modal-action {
-  float: right;
-  margin-top: -1px;
+margin: auto;
+  // margin-top: -1px;
 }
 
 button.modal-trigger {
   float: right;
-  // margin-top: 1px;
+  margin-top: 1px;
   background-color: #2B292A;
 }
-
-.parallax-container {
-  height: 1000px;
+button.btn.modal-trigger {
+margin-right: 320px;
 }
+h1 {
+  font-size: 100pt;
+  text-align: center;
+  padding-top: 100px;
+}
+h2 {
+  font-size: 100pt;
+  text-align: center;
+}
+.parallax-container {
+  height: "20px";
+}
+
+

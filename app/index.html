@@ -38,64 +38,173 @@
   </div>
   <!-- <div class="container"> -->
   <!-- </div> -->
-    <div class="parallax-container">
+  <div class="parallax-container">
     <div class="parallax"><img src="/images/black.jpg"></div>
-  <!-- REGISTRATION MODAL TRIGGER -->
-  <button data-target="modal1" class="btn modal-trigger">CREATE ACCOUNT</button>
-  <!-- Modal Structure -->
-  <div class="modal" id="modal1">
-    <div class="modal-content">
-      <h5>
+    <!-- REGISTRATION MODAL TRIGGER -->
+    <button data-target="modal1" class="btn modal-trigger">CREATE ACCOUNT</button>
+    <!-- Modal Structure -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <h5>
       Enter Contact Information
     </h5>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6  ">
+                <!-- <i class="material-icons prefix">account_circle</i> -->
+                <input class="validate" id="first_name" placeholder="First Name" type="text">
+              </div>
+              <div class="input-field col s6  ">
+                <input class="validate" id="last_name" placeholder="Last Name" type="text">
+              </div>
+            </div>
+            <!-- FIX ERROR/SUCCESS SASS VALIDATION -->
+            <div class="row">
+              <div class="input-field col s6  ">
+                <!-- <i class="material-icons prefix">email</i> -->
+                <input class="validate" id="email" placeholder="E-mail" type="text">
+                <label for="email" data-error="wrong" data-success="right"></label>
+              </div>
+              <div class="input-field col s6  ">
+                <!-- <i class="material-icons prefix">telephone</i> -->
+                <input class="validate" id="telephone" placeholder="Telephone" type="tel">
+                <label for="telephone" data-error="wrong" data-success="right"></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6  ">
+                <!-- <i class="material-icons prefix">lock_outline</i> -->
+                <input class="validate" id="password" placeholder="Password" type="text">
+                <label for="password" data-error="wrong" data-success="right"></label>
+              </div>
+              <div class="input-field col s6  ">
+                <!-- <i class="material-icons prefix">face</i> -->
+                <input class="validate" id="username" placeholder="Username" type="text">
+                <label for="username" data-error="wrong" data-success="right"></label>
+                <!-- <input class="validate" id="user_name" placeholder="Username" type="username"> -->
+              </div>
+            </div>
+          </form>
+          <button class="modal-action modal-close btn waves-effect waves-light" type="submit" name="action">REGISTER</button>
+        </div>
+      </div>
+    </div>
+    <h1>STAFF</h1>
+     <div class="row center">
+          <h5 class="header col s12 light">Describe Ensemble/Staff</h5>
+        </div>
+    <!-- PARALLAX -->
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="/images/white2.jpg"></div>
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">PLAY</h5>
+            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">GIG BOARD</h5>
+            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">REGISTER</h5>
+            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br>
+        <br>
+        <h2 class="header center teal-text text-lighten-2">ENSEMBLE</h2>
+        <div class="row center">
+          <h5 class="header col s12 light">Describe Ensemble/Staff</h5>
+        </div>
+        <div class="row center">
+         <button data-target="modal1" class="btn modal-trigger">CREATE ACCOUNT</button>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="parallax"><img src="/images/black2.jpg"></div>
+  </div>
+  <!-- <div class="parallax"><img src="/images/black.jpg"></div>
+<div class="parallax"><img src="/images/white.jpg"></div>
+ -->
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
       <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6  ">
-              <!-- <i class="material-icons prefix">account_circle</i> -->
-              <input class="validate" id="first_name" placeholder="First Name" type="text">
-            </div>
-            <div class="input-field col s6  ">
-              <input class="validate" id="last_name" placeholder="Last Name" type="text">
-            </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">REGISTER</h5>
+            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo reiciendis voluptas in maxime similique, quae distinctio rerum deleniti pariatur atque asperiores unde nihil eos nam laboriosam excepturi molestiae reprehenderit culpa?</p>
           </div>
-          <!-- FIX ERROR/SUCCESS SASS VALIDATION -->
-          <div class="row">
-            <div class="input-field col s6  ">
-              <!-- <i class="material-icons prefix">email</i> -->
-              <input class="validate" id="email" placeholder="E-mail" type="text">
-              <label for="email" data-error="wrong" data-success="right"></label>
-            </div>
-            <div class="input-field col s6  ">
-              <!-- <i class="material-icons prefix">telephone</i> -->
-              <input class="validate" id="telephone" placeholder="Telephone" type="tel">
-              <label for="telephone" data-error="wrong" data-success="right"></label>
-            </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">HIRE TALENT</h5>
+            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo reiciendis voluptas in maxime similique, quae distinctio rerum deleniti pariatur atque asperiores unde nihil eos nam laboriosam excepturi molestiae reprehenderit culpa?</p>
           </div>
-          <div class="row">
-            <div class="input-field col s6  ">
-              <!-- <i class="material-icons prefix">lock_outline</i> -->
-              <input class="validate" id="password" placeholder="Password" type="text">
-              <label for="password" data-error="wrong" data-success="right"></label>
-            </div>
-            <div class="input-field col s6  ">
-              <!-- <i class="material-icons prefix">face</i> -->
-              <input class="validate" id="username" placeholder="Username" type="text">
-              <label for="username" data-error="wrong" data-success="right"></label>
-              <!-- <input class="validate" id="user_name" placeholder="Username" type="username"> -->
-            </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">VIEW GIGBOARD</h5>
+            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo reiciendis voluptas in maxime similique, quae distinctio rerum deleniti pariatur atque asperiores unde nihil eos nam laboriosam excepturi molestiae reprehenderit culpa?</p>
           </div>
-        </form>
-        <button class="modal-action modal-close btn waves-effect waves-light" type="submit" name="action">REGISTER</button>
+        </div>
       </div>
     </div>
   </div>
-  <!-- PARALLAX -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Describe Ensemble/Staff</h5>
+        </div>
 
-  </div>
-  <div class="parallax-container">
+      </div>
+    </div>
     <div class="parallax"><img src="/images/white.jpg"></div>
   </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Trini</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--   <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">CONTACT FOOTER</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+      <div class="parallax"><img src="/images/black.jpg"></div>
+    </div>
+  </div> -->
   <!-- <div class="parallax-container">
     <div class="parallax">
       <div class="section white">
