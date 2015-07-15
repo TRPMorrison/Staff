@@ -1,6 +1,9 @@
 nav {
   height: 90px;
   background-color: #482813; }
+  nav img {
+    width: 1242px;
+    height: 300px; }
 
 i.large.material-icons {
   color: red;
