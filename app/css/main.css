@@ -1,17 +1,24 @@
+* {
+  border: solid 1.5px red; }
+
 nav {
   height: 90px;
   background-color: #482813; }
-  nav img {
-    width: 1242px;
-    height: 300px; }
+
+ul.right.hide-on-med-and-down {
+  background-color: red; }
+  ul.right.hide-on-med-and-down .li {
+    margin-right: 100px; }
+    ul.right.hide-on-med-and-down .li button.btn.modal-trigger {
+      margin-right: 20px; }
 
 i.large.material-icons {
   color: red;
   margin-left: 2%; }
 
-nav a.brand-logo {
-  width: 30%;
-  margin-left: 5%;
+a.brand-logo {
+  width: 20%;
+  margin-left: 1%;
   color: white;
   overflow: overlay; }
 
@@ -22,9 +29,6 @@ nav .nav-wrapper {
 
 .modal .modal1 {
   width: 800px; }
-
-.modal2 button.btn.modal-trigger {
-  margin-right: 30px; }
 
 .modal-content h5 {
   margin-top: 0; }
@@ -37,9 +41,6 @@ button.modal-trigger {
   margin-top: 1px;
   background-color: #2B292A; }
 
-button.btn.modal-trigger {
-  margin-right: 30px; }
-
 h1 {
   font-size: 100pt;
   text-align: center;
@@ -50,4 +51,5 @@ h2 {
   text-align: center; }
 
 .parallax-container {
-  height: "20px"; }
+  height: "5px";
+  margin-top: -25px; }

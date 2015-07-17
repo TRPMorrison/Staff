@@ -1,28 +1,23 @@
-// * {
-//   border: solid 1.5px red;
-// }
-
-        // <ul>
-        //         <li>
-        //             <button data-target="modal" class="btn modal-trigger">REGISTER</button>
-        //         </li>
-        //         <li>
-        //             <button data-target="modal" class="btn modal-trigger">MY DASHBOARD</button>
-        //         </li>
-        //         <li>
-        //             <button data-target="modal" class="btn modal-trigger">VIEW GIG BOARD</button>
-        //         </li>
-        //         <li>
-        //             <button data-target="modal" class="btn modal-trigger">LOG OUT</button>
-        //         </li>
-        //     </ul>
+* {
+    border: solid 1.5px red;
+}
 
 nav {
     height: 90px;
     background-color: #482813;
-    img {
-        width: 1242px;
-        height: 300px;
+}
+
+ul.right.hide-on-med-and-down {
+    // width: 800px;
+    // height: 400px;
+    background-color: red;
+    .li {
+        // margin-left: 10px;
+        margin-right: 100px;
+        // width: 40px;
+        button.btn.modal-trigger {
+            margin-right: 20px;
+        }
     }
 }
 
@@ -34,9 +29,9 @@ i.large.material-icons {
     // display: inline;
 }
 
-nav a.brand-logo {
-    width: 30%;
-    margin-left: 5%;
+a.brand-logo {
+    width: 20%;
+    margin-left: 1%;
     color: white;
     overflow: overlay;
 }
@@ -51,10 +46,9 @@ nav .nav-wrapper {
     width: 800px;
 }
 
-.modal2 button.btn.modal-trigger {
-    margin-right: 30px;
-}
-
+// .modal2 button.btn.modal-trigger {
+//     margin-right: 30px;
+// }
 .modal-content h5 {
     margin-top: 0;
 }
@@ -70,10 +64,6 @@ button.modal-trigger {
     background-color: #2B292A;
 }
 
-button.btn.modal-trigger {
-    margin-right: 30px;
-}
-
 h1 {
     font-size: 100pt;
     text-align: center;
@@ -86,5 +76,6 @@ h2 {
 }
 
 .parallax-container {
-    height: "20px";
+    height: "5px";
+    margin-top: -25px;
 }
