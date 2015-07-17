@@ -1,68 +1,90 @@
 // * {
 //   border: solid 1.5px red;
 // }
+
+        // <ul>
+        //         <li>
+        //             <button data-target="modal" class="btn modal-trigger">REGISTER</button>
+        //         </li>
+        //         <li>
+        //             <button data-target="modal" class="btn modal-trigger">MY DASHBOARD</button>
+        //         </li>
+        //         <li>
+        //             <button data-target="modal" class="btn modal-trigger">VIEW GIG BOARD</button>
+        //         </li>
+        //         <li>
+        //             <button data-target="modal" class="btn modal-trigger">LOG OUT</button>
+        //         </li>
+        //     </ul>
+
 nav {
-  height: 90px;
-  background-color: #482813;
-  img {
-    width: 1242px;
-    height: 300px;
-  }
+    height: 90px;
+    background-color: #482813;
+    img {
+        width: 1242px;
+        height: 300px;
+    }
 }
 
 i.large.material-icons {
-  color: red;
-  margin-left: 2%;
-  // z-index: -1;
-  // overflow: overlay;
-  // display: inline;
+    color: red;
+    margin-left: 2%;
+    // z-index: -1;
+    // overflow: overlay;
+    // display: inline;
 }
 
 nav a.brand-logo {
-  width: 30%;
-  margin-left: 5%;
-  color: white;
-  overflow: overlay;
+    width: 30%;
+    margin-left: 5%;
+    color: white;
+    overflow: overlay;
 }
 
 nav .nav-wrapper {
-  width: 45%;
-  position: relative;
-  float: right;
+    width: 100%;
+    position: relative;
+    float: right;
 }
 
-.modal {
-  width: 800px;
+.modal .modal1 {
+    width: 800px;
+}
+
+.modal2 button.btn.modal-trigger {
+    margin-right: 30px;
 }
 
 .modal-content h5 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 button.modal-action {
-margin: auto;
-  // margin-top: -1px;
+    margin: auto;
+    // margin-top: -1px;
 }
 
 button.modal-trigger {
-  float: right;
-  margin-top: 1px;
-  background-color: #2B292A;
+    float: right;
+    margin-top: 1px;
+    background-color: #2B292A;
 }
+
 button.btn.modal-trigger {
-margin-right: 320px;
+    margin-right: 30px;
 }
+
 h1 {
-  font-size: 100pt;
-  text-align: center;
-  padding-top: 100px;
+    font-size: 100pt;
+    text-align: center;
+    padding-top: 100px;
 }
+
 h2 {
-  font-size: 100pt;
-  text-align: center;
+    font-size: 100pt;
+    text-align: center;
 }
+
 .parallax-container {
-  height: "20px";
+    height: "20px";
 }
-
-
